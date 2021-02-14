@@ -1,0 +1,10 @@
+#admin-nav {
+  display: flex;
+  padding: 0 32px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.colour-toggle {
+  justify-self: flex-end;
+}

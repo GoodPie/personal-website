@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "portfolio-5eb54": {
+      "hosting": {
+        "website-front": [
+          "portfolio-5eb54"
+        ]
+      }
+    }
+  }
+}

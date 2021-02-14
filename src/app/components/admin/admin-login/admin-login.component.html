@@ -1,0 +1,25 @@
+<div class="full-width-height">
+
+  <div id="admin-login-container">
+
+    <fast-card style="width: 300px; height: auto; padding: 20px">
+      <div style="padding: 0 10px 10px;">
+        <h2>Admin Login</h2>
+        <p *ngIf="errorMessage">{{errorMessage}}</p>
+        <form (ngSubmit)="loginWithEmailAndPassword()"  style="display: flex; justify-content: center; flex-direction: column">
+
+
+          <fast-text-field [(ngModel)]="loginEmailAddress" name="loginEmailAddress" ngDefaultControl type="text" style="margin-bottom: 12px" placeholder="Email Address"></fast-text-field>
+          <fast-text-field [(ngModel)]="loginPassword"  id="loginPassword" name="loginPassword" ngDefaultControl type="password" style="margin-bottom: 12px"  placeholder="Password"></fast-text-field>
+
+          <fast-button type="submit" appearance="accent" (click)="loginWithEmailAndPassword()" style="margin-bottom: 12px"  >Login</fast-button>
+          <fast-button appearance="accent" (click)="loginWithGoogle()">Login with Google</fast-button>
+
+        </form>
+
+      </div>
+    </fast-card>
+
+  </div>
+
+</div>
